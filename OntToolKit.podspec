@@ -4,10 +4,10 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'NetworkManager, Logger'
 
-  s.homepage         = 'https://github.com/fish-yan/hs-tool-kit-ios'
+  s.homepage         = 'https://github.com/fish-yan/OntToolKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yan' => '757094197@qq.com' }
-  s.source           = { git: 'https://github.com/fish-yan/hs-tool-kit-ios', tag: "#{s.version}" }
+  s.source           = { git: 'https://github.com/fish-yan/OntToolKit', tag: "#{s.version}" }
   s.social_media_url = 'https://github.com/fish-yan'
 
   s.ios.deployment_target = '13.0'
