@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4D2C670CE257D4D446BA24 /* Pods_OntToolKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF6FD45667EF93EC310CEE4 /* Pods_OntToolKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,9 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09D7F2BC472E610FB6CA659E /* Pods-OntToolKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OntToolKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OntToolKit_Tests/Pods-OntToolKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0B48C286F85714622E23DE86 /* Pods_OntToolKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OntToolKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DF6FD45667EF93EC310CEE4 /* Pods_OntToolKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OntToolKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		235E21CC01C22817A0B6C5F4 /* OntToolKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OntToolKit.podspec; path = ../OntToolKit.podspec; sourceTree = "<group>"; };
 		4FC2590D4F722A7322EC4D74 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* OntToolKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OntToolKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +43,6 @@
 		6E81936F910AB429D2E6E84B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8A06E62BCBE05BE04551AFF0 /* Pods-OntToolKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OntToolKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-OntToolKit_Example/Pods-OntToolKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A4FB1696E4D78717732FB814 /* Pods-OntToolKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OntToolKit_Example.release.xcconfig"; path = "Target Support Files/Pods-OntToolKit_Example/Pods-OntToolKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C2BE09D5D7858B22A948AF43 /* Pods-OntToolKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OntToolKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-OntToolKit_Tests/Pods-OntToolKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4D2C670CE257D4D446BA24 /* Pods_OntToolKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				0B48C286F85714622E23DE86 /* Pods_OntToolKit_Example.framework */,
-				0DF6FD45667EF93EC310CEE4 /* Pods_OntToolKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,8 +147,6 @@
 			children = (
 				8A06E62BCBE05BE04551AFF0 /* Pods-OntToolKit_Example.debug.xcconfig */,
 				A4FB1696E4D78717732FB814 /* Pods-OntToolKit_Example.release.xcconfig */,
-				09D7F2BC472E610FB6CA659E /* Pods-OntToolKit_Tests.debug.xcconfig */,
-				C2BE09D5D7858B22A948AF43 /* Pods-OntToolKit_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -186,11 +178,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "OntToolKit_Tests" */;
 			buildPhases = (
-				CE8008721C5C0D36D5FA0BFA /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				962E4FD4B0B076122F70098E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,62 +282,59 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OntToolKit_Example/Pods-OntToolKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIOAtomics/CNIOAtomics.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIOBoringSSL/CNIOBoringSSL.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIOBoringSSLShims/CNIOBoringSSLShims.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIODarwin/CNIODarwin.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIOHTTPParser/CNIOHTTPParser.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIOLinux/CNIOLinux.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIOSHA1/CNIOSHA1.framework",
+				"${BUILT_PRODUCTS_DIR}/CNIOWindows/CNIOWindows.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/OntToolKit/OntToolKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIO/NIO.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOConcurrencyHelpers/NIOConcurrencyHelpers.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOCore/NIOCore.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOEmbedded/NIOEmbedded.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOFoundationCompat/NIOFoundationCompat.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOHTTP1/NIOHTTP1.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOPosix/NIOPosix.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOSSL/NIOSSL.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOTLS/NIOTLS.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNIOWebSocket/NIOWebSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/_NIODataStructures/_NIODataStructures.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIOAtomics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIOBoringSSL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIOBoringSSLShims.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIODarwin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIOHTTPParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIOLinux.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIOSHA1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNIOWindows.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OntToolKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOConcurrencyHelpers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOEmbedded.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOFoundationCompat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOHTTP1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOPosix.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOSSL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOTLS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIOWebSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/_NIODataStructures.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OntToolKit_Example/Pods-OntToolKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		962E4FD4B0B076122F70098E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OntToolKit_Tests/Pods-OntToolKit_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OntToolKit_Tests/Pods-OntToolKit_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE8008721C5C0D36D5FA0BFA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OntToolKit_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -531,7 +518,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09D7F2BC472E610FB6CA659E /* Pods-OntToolKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -553,7 +539,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2BE09D5D7858B22A948AF43 /* Pods-OntToolKit_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

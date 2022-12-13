@@ -1,0 +1,6 @@
+framework module OntToolKit {
+  umbrella header "OntToolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
